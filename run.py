@@ -1,6 +1,7 @@
 import os
 import re
 import smtplib
+import webbrowser
 import urllib.request
 from waitress import serve
 from pytube import YouTube
@@ -13,7 +14,7 @@ from flask import Flask, request, render_template
 app=Flask(__name__) 
 @app.route('/',methods=['GET','POST'])
 def index():
-    if request.method=='POST':
+    if request.method == 'POST':
         f=AudioSegment.empty()
         for i in range(int(request.form['number_of_videos'])):
             f+=AudioSegment.from_file(YouTube('https://www.youtube.com/watch?v='+re.findall(r'watch\?v=(\S{11})',urllib.request.urlopen('https://www.youtube.com/results?search_query='+str(request.form['singer_name'].replace(' ', '+'))).read().decode())[i]).streams.filter(only_audio=True).first().download(filename=str(i)))[:int(request.form['audio_duration'])* 1000]
@@ -35,4 +36,5 @@ def index():
         os.remove('mashup.zip')
     return render_template('index.html')
 if __name__=='__main__':
+    webbrowser.open_new('http://127.0.0.1:5000')
     serve(app,host='127.0.0.1',port=5000)
