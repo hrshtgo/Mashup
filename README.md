@@ -22,8 +22,8 @@ pip install flask
 
 * The appearance of the webapp can be changed by editing the HTML file named [index.html] in the templates folder.
 
-The webapp can be hosted online on a platform that allows the following:
-* SMTP via port 465.
-* Downloading and storing files from YouTube.
+* The webapp can be hosted online on a platform that allows the following:
+** SMTP via port 465.
+** Downloading and storing files from YouTube.
 
 As of now there were no free online platforms that satisfy both the conditions and therefore I have provided the link to this repository.
