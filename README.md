@@ -15,13 +15,15 @@ pip install flask
 ```
 * Install ffmpeg via https://www.geeksforgeeks.org/how-to-install-ffmpeg-on-windows/.
 
-## Using the web app
+## Using the Web App
 Navigate to the folder where you have downloaded the above files and open [run.py].
 
-Hit submit after filling the required entries in the webpage that opens and the input email id will receive a zip file containing an audio file which can be renamed to any audio file extension [for eg: mp3].
+Hit submit after filling the required entries in the webpage that opens and the input email id will receive a zip file containing an audio file which can be renamed to any audio file extension format [for eg: .mp3].
 
-Webpage can be changed by editing the HTML code in the templates folder named [index.html].
+The appearance of the webapp can be changed by editing the HTML code in the templates folder named [index.html].
 
 The webapp can be hosted online on a platform that allows the following:
 * SMTP via port 465.
 * Downloading and storing files from YouTube.
+
+As of now there were no free online platforms that satisfy both the conditions and therefore I have provided the link to this repository.
