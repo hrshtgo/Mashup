@@ -2,6 +2,7 @@ import os
 import re
 import smtplib
 import urllib.request
+from waitress import serve
 from pytube import YouTube
 from email import encoders
 from zipfile import ZipFile
@@ -28,10 +29,10 @@ def index():
         encoders.encode_base64(part)
         part.add_header("Content-Disposition",f"attachment;filename={'mashup.zip'}",)
         m.attach(part)
-        with smtplib.SMTP_SSL("smtp.gmail.com", 465) as server:
+        with smtplib.SMTP_SSL("smtp.gmail.com",465) as server:
             server.login('mashupwebservice@gmail.com','vohhegrtknjctdyp')
             server.sendmail('mashupwebservice@gmail.com',request.form['email'],m.as_string())
         os.remove('mashup.zip')
     return render_template('index.html')
 if __name__=='__main__':
-    app.run(debug=False,host='0.0.0.0')
+    serve(app,host='127.0.0.1',port=5000)
