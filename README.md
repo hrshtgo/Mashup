@@ -1,9 +1,10 @@
 # Mashup Web Service
 
+## Name: Harshit Gogia
 ## Roll No: 102003644
 
 ## Description
-This web service generates a unique blend of videos of your preferred singer. Enter the singer's name, the number of videos, the audio duration, and the email ID where you want to send the zipped mashup file. Note that the app may take some time to execute as it requires downloading multiple audio files from the internet.
+The web service generates a unique blend of videos of your preferred singer. Enter the singer's name, the number of videos, the audio duration, and the email ID where you want to send the zipped mashup file. Note that the app may take some time to execute as it requires downloading multiple audio files from the internet.
 
 ## Requirements
 * Run the following commands in the terminal.
@@ -16,13 +17,11 @@ pip install flask
 * Install ffmpeg via https://www.geeksforgeeks.org/how-to-install-ffmpeg-on-windows/.
 
 ## Using the Web App
-* Navigate to the folder where you have downloaded the above files and open [run.py].
+* Download [run.py] and open it using python.
 
 * Hit submit after filling in the required entries on the webpage that opens. 
 
-* The input email id should receive a zip file containing an audio file that can be renamed to any audio file extension format [e.g., .mp3].
-
-* Editing the HTML file named [index.html] in the templates folder can change the web app's appearance.
+* The input email id should receive a zip file containing an audio file that can be renamed to any audio file extension format [e.g., mashup.mp3].
 
 The webapp can be hosted online on a platform that allows the following:
 * SMTP via port 465.
