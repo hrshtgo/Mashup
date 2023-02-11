@@ -1,4 +1,5 @@
 # Mashup Web Service
+YouTube: https://youtu.be/n9eDh-yUaqQ
 
 ## Name: Harshit Gogia
 ## Roll No: 102003644
@@ -17,7 +18,7 @@ pip install flask
 * Install ffmpeg via https://www.geeksforgeeks.org/how-to-install-ffmpeg-on-windows/.
 
 ## Using the Web App
-* Download [run.py] and open it using python.
+* Download [run.py] and open with python.
 
 * Hit submit after filling in the required entries on the webpage that opens. 
 
