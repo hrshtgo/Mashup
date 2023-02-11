@@ -21,7 +21,8 @@ pip install flask
 
 * Hit submit after filling in the required entries on the webpage that opens. 
 
-* The input email id should receive a zip file containing an audio file that can be renamed to any audio file extension format [e.g., mashup.mp3].
+* The input email id should receive a zip file containing an audio file that can be renamed to any audio file extension format [e.g., mashup.mp3]. 
+  (Be sure to check the spam folder.)
 
 The webapp can be hosted online on a platform that allows the following:
 * SMTP via port 465.
