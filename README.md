@@ -1,9 +1,6 @@
 # Mashup Web Service
 Working Demonstration: https://youtu.be/n9eDh-yUaqQ
 
-## Name: Harshit Gogia
-## Roll No: 102003644
-
 ## Description
 The web service generates a unique blend of videos of your preferred singer. Enter the singer's name, the number of videos, the audio duration, and the email ID where you want to send the zipped mashup file. Note that the app may take some time to execute as it requires downloading multiple audio files from the internet.
 
