@@ -31,8 +31,8 @@ def index():
         part.add_header("Content-Disposition",f"attachment;filename={'mashup.zip'}",)
         m.attach(part)
         with smtplib.SMTP_SSL("smtp.gmail.com",465) as server:
-            server.login('mashupwebservice@gmail.com','vohhegrtknjctdyp')
-            server.sendmail('mashupwebservice@gmail.com',request.form['email'],m.as_string())
+            server.login('<insert_email>','<insert_app_password>')
+            server.sendmail('<insert_email>',request.form['email'],m.as_string())
         os.remove('mashup.zip')
     return '''
     <!DOCTYPE html>
